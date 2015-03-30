@@ -74,8 +74,7 @@ class HomeController extends Controller
     public function homeAction(
         Paginator $paginator,
         PaginatorAttributes $paginatorAttributes
-    )
-    {
+    ) {
         return $this->renderTemplate(
             'Pages:home-view.html.twig',
             [
