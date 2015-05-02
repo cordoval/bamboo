@@ -6,7 +6,7 @@ services:
     elcodi.admin.rule.form_type.rule:
         class: Elcodi\Admin\RuleBundle\Form\Type\RuleType
         arguments:
-            entity: %elcodi.entity.rule.class%
+            - %elcodi.entity.rule.class%
         calls:
             - [setFactory, [@elcodi.factory.rule]]
         tags:

@@ -52,7 +52,7 @@ class NewsletterSubscriptionType extends AbstractType
     }
 
     /**
-     * Buildform function
+     * buildForm function
      *
      * @param FormBuilderInterface $builder the formBuilder
      * @param array                $options the options for this form

@@ -133,11 +133,9 @@ class CategorySorter
             $category->setPosition($counter);
 
             if ($parentCategory) {
-                $category->setPosition($counter);
                 $category->setRoot(false);
                 $category->setParent($parentCategory);
             } else {
-                $category->setPosition($counter);
                 $category->setRoot(true);
                 $category->setParent(null);
             }

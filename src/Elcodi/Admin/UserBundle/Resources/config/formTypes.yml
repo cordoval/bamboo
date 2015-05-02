@@ -6,14 +6,14 @@ services:
     admin.user.form_type.login:
         class: Elcodi\Admin\UserBundle\Form\Type\LoginType
         arguments:
-            router: @router
+            - @router
         tags:
             - { name: form.type, alias: elcodi_admin_user_form_type_login }
 
     admin.user.form_type.register:
         class: Elcodi\Admin\UserBundle\Form\Type\RegisterType
         arguments:
-            customer_namespace: %elcodi.entity.customer.class%
+            - %elcodi.entity.customer.class%
         tags:
             - { name: form.type, alias: elcodi_admin_user_form_type_register }
 
